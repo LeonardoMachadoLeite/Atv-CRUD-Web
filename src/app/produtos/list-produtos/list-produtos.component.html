@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead>
+    <tr scope="row" class="thead-dark">
+      <th scope="col">Id</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Valor</th>
+    </tr>
+  </thead>
+  <tr *ngFor='let prod of listaProdutos' scope="row">
+
+    <td scope="col">{{ prod.id }}</td>
+
+    <td scope="col">{{ prod.nome }}</td>
+
+    <td scope="col">{{ prod.valor }}</td>
+
+  </tr>
+</table>

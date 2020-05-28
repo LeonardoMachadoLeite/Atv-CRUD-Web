@@ -1,0 +1,18 @@
+<div>
+  <h1>Cadastro de Produto</h1>
+</div>
+<form [formGroup]="produtoForm">
+  <div>
+    <a>Nome do Produto: </a>
+    <input type="text" class="form-control" formControlName="nome" [(ngModel)]="nome">
+  </div>
+  <br>
+  <div>
+    <a>Valor do Produto: </a>
+    <input type="number" class="form-control" formControlName="valor" [(ngModel)]="valor">
+  </div>
+  <br>
+  <div>
+    <button (click)="OnClickCadastrar($event)">Cadastrar</button>
+  </div>
+</form>
